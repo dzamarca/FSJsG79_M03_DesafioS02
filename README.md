@@ -1,3 +1,3 @@
-GITHUB PAGE
+GITHUB PAGE 
 
->>>>  https://dzamarca.github.io/FSJsG79_M03_DesafioS02/
+https://dzamarca.github.io/FSJsG79_M03_DesafioS02/
