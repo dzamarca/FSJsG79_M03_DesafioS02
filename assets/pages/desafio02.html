@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Desafio 02</h1>
+      <section class="sectionDesafio02">
+        <div class="boxDesafio02">
+          <img src="../img/hxh01.webp" alt="" />
+          <input type="number" value="0" class="input01" min="0" />
+        </div>
+        <div class="boxDesafio02">
+          <img src="../img/hxh02.webp" alt="" />
+          <input type="number" value="0" class="input02" min="0" />
+        </div>
+        <div class="boxDesafio02">
+          <img src="../img/hxh03.webp" alt="" />
+          <input type="number" value="0" class="input03" min="0" />
+        </div>
+      </section>
+      <p class="resultadoDesafio02"></p>
+      <section>
+        <button
+          class="btn02"
+          onclick="
+            input01 = parseInt(document.querySelector('.input01').value)
+            input02 = parseInt(document.querySelector('.input02').value)
+            input03 = parseInt(document.querySelector('.input03').value)
+            totalDesafio02 = input01+input02+input03
+
+            if (totalDesafio02 <= 10){
+              msjResultadoDesafio02 = 'Llevas ' + totalDesafio02 + ' Stickers'
+            }else{
+              msjResultadoDesafio02 = 'Llevas demasiados stickers'
+            }
+            resultadoDesafio02.innerHTML = msjResultadoDesafio02
+          "
+        >
+          Validar
+        </button>
+        <a href="../../index.html">
+          <button class="btn02">Regresar</button>
+        </a>
+      </section>
+    </section>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

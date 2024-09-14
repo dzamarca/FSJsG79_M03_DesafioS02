@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 3</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Desafio 03</h1>
+      <h3>Ingrese una clave</h3>
+      <section class="sectionDesafio03">
+        <div class="boxDesafio03">
+          <select name="digito01" id="digito01">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div class="boxDesafio03">
+          <select name="digito02" id="digito02">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div class="boxDesafio03">
+          <select name="digito03" id="digito03">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+      </section>
+      <p class="resultadoDesafio03"></p>
+      <section>
+        <button
+          class="btn03"
+          onclick="
+            digito01 = document.querySelector('#digito01').value
+            digito02 = document.querySelector('#digito02').value
+            digito03 = document.querySelector('#digito03').value
+            keyDesafio03 = digito01+digito02+digito03
+            
+            if (keyDesafio03 === '911'){
+                msjResultadoDesafio03 = 'Password 1 correcto'
+            }else if(keyDesafio03 === '714'){
+                msjResultadoDesafio03 = 'Password 2 correcto'
+            }else{
+                msjResultadoDesafio03 = 'Password incorrecto'
+            }
+            resultadoDesafio03.innerHTML = msjResultadoDesafio03
+          "
+        >
+          Ingresar
+        </button>
+        <a href="../../index.html">
+          <button class="btn03">Regresar</button>
+        </a>
+      </section>
+    </section>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

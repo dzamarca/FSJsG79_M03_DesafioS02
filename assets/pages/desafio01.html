@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 1</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Desafio 01</h1>
+      <section class="sectionDesafio01">
+        <img
+          class="imgDesafio01"
+          src="../img/hxh01.webp"
+          alt=""
+          onclick="
+                if(estadoImgDesafio01 === 0){
+                    estadoImgDesafio01 = 1
+                    imgDesafio01.style.border= '2px red solid' 
+                }else{
+                    estadoImgDesafio01 = 0
+                    imgDesafio01.style.border= '0' 
+                }
+            "
+        />
+      </section>
+      <a href="../../index.html">
+        <button class="btn01">Regresar</button>
+      </a>
+    </section>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
